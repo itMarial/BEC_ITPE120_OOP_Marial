@@ -1,8 +1,8 @@
-public class Act1 {
+public class instances1 {
     private static int instanceCount = 0;
     private String name;
 
-    public Act1(String name) {
+    public instances1(String name) {
         this.name = name;
         instanceCount++;
     }
@@ -21,18 +21,5 @@ public class Act1 {
         int[] numbers = {10, 20, 30, 40, 50};
         double average = MathUtils.calculateAverage(numbers);
         System.out.println("Average: " + average);
-    }
-}
-
-class MathUtils {
-    public static double calculateAverage(int[] numbers) {
-        if (numbers.length == 0) {
-            return 0;
-        }
-        double sum = 0;
-        for (int num : numbers) {
-            sum += num;
-        }
-        return sum / numbers.length;
     }
 }
